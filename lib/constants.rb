@@ -19,4 +19,6 @@ module Constants
   LEFT_COMMAND_REGEX = /^LEFT$/
   RIGHT_COMMAND_REGEX = /^RIGHT$/
   REPORT_COMMAND_REGEX = /^REPORT$/
+
+  ENTER_COMMAND_TEXT = 'enter a command (EXIT to quit): '
 end

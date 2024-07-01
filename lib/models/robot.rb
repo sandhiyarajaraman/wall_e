@@ -11,14 +11,9 @@ class Robot
   end
 
   def report_position
-    if not_positioned?
-      puts 'Robot is not placed on the table. ' \
-           'Run command `PLACE X,Y,FACING` to start the game. ' \
-           'X and Y are coordinates. ' \
-           'FACING is a direction.'
-    end
+    puts CLI::UI.fmt "{{red:#{NOT_PLACED_ERROR}}}" if not_positioned?
 
-    puts @current_position
+    puts CLI::UI.fmt "{{yellow:#{@current_position}}}"
   end
 
   def not_positioned?

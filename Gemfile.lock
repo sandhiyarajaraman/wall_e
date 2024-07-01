@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.2)
+    cli-ui (2.2.3)
     diff-lcs (1.5.1)
     interactor (3.1.2)
     json (2.7.2)
@@ -52,6 +53,7 @@ PLATFORMS
   x86_64-darwin-22
 
 DEPENDENCIES
+  cli-ui
   interactor
   rspec
   rubocop
