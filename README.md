@@ -9,6 +9,7 @@ The application is a simulation of a toy robot moving on a square tabletop. This
 * [Run the tests](./README.md#run-the-tests)
 * [Notes on Implementation](./README.md#notes-on-implementation)
 * [Scope for enhancements](./README.md#scope-for-enhancements)
+* [Sample output](./README.md#sample-output)
 
 ### Additional resource links:
 
@@ -91,3 +92,8 @@ bundle exec rspec spec
 - Reverse movement can also be introduced.
 
 - All commands can be made case insensitive.
+
+
+### Sample output
+
+![Sample screenshot](screenshots/Wall-E-4.png)
