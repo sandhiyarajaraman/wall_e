@@ -20,5 +20,6 @@ module Constants
   RIGHT_COMMAND_REGEX = /^RIGHT$/
   REPORT_COMMAND_REGEX = /^REPORT$/
 
+  BEGIN_GAME_TEXT = 'Welcome! Begin by placing the robot on the table.'
   ENTER_COMMAND_TEXT = 'enter a command (EXIT to quit): '
 end

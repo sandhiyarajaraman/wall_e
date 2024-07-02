@@ -13,9 +13,6 @@ class Move < Command
     context.fail!(message: Robot::NOT_PLACED_ERROR)
   end
 
-  # context must contain:
-  #   robot: object of Robot class
-  #   table: object of Position class
   def call
     validate_call
 

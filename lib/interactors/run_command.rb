@@ -10,22 +10,22 @@ class RunCommand < Command
   def call
     validate_call
 
-    result = parse_and_call(context.command)
+    result = parse_and_run(context.command)
     return if result.success?
 
     context.fail!(message: result.message)
   end
 
-  def parse_and_call(command) # rubocop:disable Metrics/AbcSize,Metrics/MethodLength
+  def parse_and_run(command) # rubocop:disable Metrics/AbcSize,Metrics/MethodLength
     case command
     when Constants::PLACE_COMMAND_REGEX
       invoke_place_command(command)
     when Constants::MOVE_COMMAND_REGEX
       Move.call(robot: context.robot, table: context.table)
     when Constants::LEFT_COMMAND_REGEX
-      TurnLeft.call(robot: context.robot, table: context.table)
+      TurnLeft.call(robot: context.robot)
     when Constants::RIGHT_COMMAND_REGEX
-      TurnRight.call(robot: context.robot, table: context.table)
+      TurnRight.call(robot: context.robot)
     when Constants::REPORT_COMMAND_REGEX
       Report.call(robot: context.robot, table: context.table)
     else

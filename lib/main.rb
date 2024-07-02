@@ -21,6 +21,8 @@ require 'constants'
 table = Table.new(5, 5)
 robot = Robot.new
 
+puts CLI::UI.fmt "{{cyan:#{Constants::BEGIN_GAME_TEXT}}}"
+
 loop do
   puts CLI::UI.fmt "{{blue:#{Constants::ENTER_COMMAND_TEXT}}}"
 
@@ -30,6 +32,6 @@ loop do
 
   result = RunCommand.call(command: input, table:, robot:)
 
-  # log the error message
+  # if the command resulted in an error, log the error message
   puts CLI::UI.fmt "{{red:#{result.message}}}" unless result.success?
 end
