@@ -2,7 +2,18 @@
 
 The application is a simulation of a toy robot moving on a square tabletop. This is a ruby command line application. 
 
-The complete [problem statement can be found here](ProblemStatement.md)
+### Table of contents:
+
+* [Built using](./README.md#built-using)
+* [Run the project](./README.md#run-the-project)
+* [Run the tests](./README.md#run-the-tests)
+* [Notes on Implementation](./README.md#notes-on-implementation)
+* [Scope for enhancements](./README.md#scope-for-enhancements)
+
+### Additional resource links:
+
+* [Complete problem statement](ProblemStatement.md)
+* [Test output with screenshots](TestOutput.md)
 
 ### Built using:
 
@@ -13,7 +24,7 @@ The complete [problem statement can be found here](ProblemStatement.md)
 - Rubocop
 - Rubocop-rspec
 
-### To run the project
+### Run the project
 
 Clone the repository from Git:
 
@@ -38,7 +49,7 @@ Next, to start the application, run (from inside the `wall_e` folder):
 ruby ./lib/main.rb
 ```
 
-### To run rspec tests, run:
+### Run the tests:
 ```bash
 bundle exec rspec spec
 ```
@@ -73,7 +84,7 @@ bundle exec rspec spec
 
 - Now in the current implementation, multiple users can play in separate instances.
 
-- The table size can be custom defined and redefined.
+- The table size can be custom defined and redefined. It need not always be a square.
 
 - The robot can be encouraged to turn in more than just the 4 cardinal directions. North-East, South-West, South-East, North-West moves can be incorporated with diagonal moves.
 

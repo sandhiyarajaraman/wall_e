@@ -1,6 +1,8 @@
 # Test cases 
 Exploring how our toy robot behaves in various scenarios, with screenshots of console output.
 
+[<- Go back to Readme.md](README.md)
+
 ### Scenario 1:
 
 The robot is not placed on the table, but we run other commands.
