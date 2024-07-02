@@ -59,6 +59,9 @@ class Position
 
   # String representation of Position
   def to_s
-    "Position => X: #{@coordinates.x_coordinate}, Y: #{@coordinates.y_coordinate}, Facing: #{@direction}"
+    'Position => ' \
+      "X: #{@coordinates.x_coordinate}, " \
+      "Y: #{@coordinates.y_coordinate}, " \
+      "Facing: #{@direction}"
   end
 end

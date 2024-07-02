@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'interactor'
+
 class TurnRight < Command
   include Interactor
 

@@ -1,10 +1,15 @@
 # frozen_string_literal: true
 
+require 'interactor'
+
 class Place < Command
   include Interactor
 
   INVALID_PLACE_ERROR = 'PLACE command is given invalid coordinates.'
   INVALID_PLACE_COMMAND_ERROR = 'PLACE command is invalid'
+
+  # context must contain:
+  # robot, table, x_coordinate, y_coordinate, direction
 
   def validate_call
     super

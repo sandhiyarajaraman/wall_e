@@ -16,6 +16,8 @@ class RunCommand < Command
     context.fail!(message: result.message)
   end
 
+  private
+
   def parse_and_run(command) # rubocop:disable Metrics/AbcSize,Metrics/MethodLength
     case command
     when Constants::PLACE_COMMAND_REGEX
