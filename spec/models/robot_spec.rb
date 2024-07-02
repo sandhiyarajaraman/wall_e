@@ -14,11 +14,11 @@ describe Robot do
   let(:robot) { described_class.new(current_position) }
   let(:current_position) { nil }
 
-  describe '#report_position' do
+  describe '#print_position' do
     context 'when robot is not placed' do
       it 'prints error message' do
         allow($stdout).to receive(:puts)
-        robot.report_position
+        robot.print_position
 
         expect($stdout).to have_received(:puts).with(/^.*#{Robot::NOT_PLACED_ERROR}.*$/)
       end
@@ -29,7 +29,7 @@ describe Robot do
 
       it 'prints position as text' do
         allow($stdout).to receive(:puts)
-        robot.report_position
+        robot.print_position
 
         expect($stdout).to have_received(:puts).with(/^.*#{current_position}.*$/)
       end

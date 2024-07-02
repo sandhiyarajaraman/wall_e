@@ -10,7 +10,7 @@ class Robot
     @current_position = position
   end
 
-  def report_position
+  def print_position
     puts CLI::UI.fmt "{{red:#{NOT_PLACED_ERROR}}}" if not_positioned?
 
     puts CLI::UI.fmt "{{yellow:#{@current_position}}}"

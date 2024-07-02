@@ -16,7 +16,7 @@ class Report < Command
   def call
     validate_call
 
-    context.robot.report_position
+    context.robot.print_position
     print_table_layout
   end
 
