@@ -18,6 +18,9 @@ class RunCommand < Command
 
   private
 
+  # Regular expressions sanitize the command and eliminate the following:
+  # Bad directions - other than NORTH, SOUTH, EAST, WEST
+  # non numeric X and Y coordinates for PLACE command
   def parse_and_run(command) # rubocop:disable Metrics/AbcSize,Metrics/MethodLength
     case command
     when Constants::PLACE_COMMAND_REGEX

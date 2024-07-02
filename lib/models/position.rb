@@ -3,6 +3,12 @@
 class Position
   attr_accessor :coordinates, :direction
 
+  # Typically, in a rails ActiveRecord model,
+  # we will include validations for coordinates
+  # and an enum for direction.
+  # But here, we are compromising by using regular expressions
+  # in RunCommand where bad input is eliminated with INVALID_COMMAND_ERROR
+
   Coordinates = Struct.new(:x_coordinate, :y_coordinate)
 
   def initialize(x_position, y_position, direction)
