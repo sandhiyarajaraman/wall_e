@@ -96,4 +96,4 @@ bundle exec rspec spec
 
 ### Sample output
 
-![Sample screenshot](./screenshots/Wall-E-4.png)
+![Sample screenshot](./screenshots/WALL-E-4.png)
