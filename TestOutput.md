@@ -9,7 +9,7 @@ The robot is not placed on the table, but we run other commands.
 
 <ins>Output:</ins> User sees an error message - `Robot is not placed on the table`
 
-![Scenario 1 result](screenshots/Wall-E-1.png)
+![Scenario 1 result](./screenshots/Wall-E-1.png)
 
 ### Scenario 2: 
 
@@ -23,7 +23,7 @@ REPORT
 
 <ins>Output:</ins> `Position => X: 0, Y: 1, Facing: NORTH`
 
-![Scenario 2 result](screenshots/Wall-E-2.png)
+![Scenario 2 result](./screenshots/Wall-E-2.png)
 
 ### Scenario 3: 
 
@@ -37,7 +37,7 @@ REPORT
 
 <ins>Output:</ins> `Position => X: 0, Y: 0, Facing: WEST`
 
-![Scenario 3 result](screenshots/Wall-E-3.png)
+![Scenario 3 result](./screenshots/Wall-E-3.png)
 
 ### Scenario 4: 
 
@@ -54,7 +54,7 @@ REPORT
 
 <ins>Output:</ins> `Position => X: 3, Y: 3, Facing: NORTH`
 
-![Scenario 4 result](screenshots/Wall-E-4.png)
+![Scenario 4 result](./screenshots/Wall-E-4.png)
 
 ### Scenario 5: 
 
@@ -68,4 +68,4 @@ MOVE
 
 <ins>Output:</ins> `MOVE not allowed. Robot will fall off the table.`
 
-![Scenario 5 result](screenshots/Wall-E-5.png)
+![Scenario 5 result](./screenshots/Wall-E-5.png)
